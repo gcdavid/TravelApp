@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import Loader from './components/Loader'
+import Navbar from './components/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isLoading, setIsLoading] = useState<boolean>(false)
   return (
-    <div className='text-3xl'>
-      I am app
-    </div>
+    <>
+    {isLoading && <Loader/>}
+    <Navbar />
+    </>
   )
 }
 
