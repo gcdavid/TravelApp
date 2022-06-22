@@ -6,13 +6,13 @@ const Navbar = () => {
       <div>
         <span>Travel-Booking</span>
       </div>
-      <div className="">
-        <button>Register</button>
+      <div className="font-normal">
+        <button className="font-normal">Register</button>
         <button className="ml-4 bg-green border-solid border-1 border-green-600 rounded px-4 hover:text-white">
           Login
         </button>
       </div>
-    </div>
+    </div> 
   );
 };
 
